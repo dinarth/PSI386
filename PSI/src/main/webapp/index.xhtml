@@ -77,14 +77,14 @@
                     <h:form>
                         <p:growl id="message" showDetail="true" />
                         <p:commandButton value="Remover" actionListener="#{joiaBean.removerJoia(data)}" update=":table" >
-                            <p:confirm header="Confirmation" message="Tem certeza que deseja remover este registro?" icon="ui-icon-alert" />
-                        </p:commandButton>
-                        <p:confirmDialog global="true" showEffect="fade" hideEffect="explode">
+                      <!--      <p:confirm header="Confirmation" message="Tem certeza que deseja remover este registro?" icon="ui-icon-alert" />
+                      -->  </p:commandButton>
+                     <!--   <p:confirmDialog global="true" showEffect="fade" hideEffect="explode">
                             <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
                             <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />   
 
                         </p:confirmDialog>
-
+-->
                         |
                         <p:commandButton value="Editar" action="#{joiaBean.carregarJoia(data)}"/>
                     </h:form>
